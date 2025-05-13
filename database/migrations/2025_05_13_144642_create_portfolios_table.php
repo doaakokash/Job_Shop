@@ -12,15 +12,14 @@ return new class extends Migration
     public function up(): void
     {
        Schema::create('portfolios', function (Blueprint $table) {
-           $table->id();
+         $table->id();
          $table->foreignId('service_id')->constrained('service_providers')->onDelete('cascade');
          $table->foreignId('service_provider_id')->constrained('service_providers')->onDelete('cascade');
          $table->string('main_image');
-            $table->string('image');
-           $table->string('image1')->nullable();
-           $table->string('image')->nullable();
-           $table->text('description');
-           $table->timestamps();
+         $table->string('image');
+         $table->string('image1')->nullable();
+         $table->text('description');
+         $table->timestamps();
         });
     }
 
