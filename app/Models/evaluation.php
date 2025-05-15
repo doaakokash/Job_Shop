@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class service_providers extends Model
+class evaluation extends Model
 {
     //
 }

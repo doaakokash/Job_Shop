@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class portfolios extends Model
+class service_provider extends Model
 {
     //
 }
